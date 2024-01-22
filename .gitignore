@@ -161,3 +161,6 @@ cython_debug/
 
 # runs MLflow
 mlruns/
+
+# virtualenv
+env_mlflow/
