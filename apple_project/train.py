@@ -27,8 +27,8 @@ X_train, X_val, y_train, y_val = train_test_split(
 
 
 # Define parameters
-n_estimators = int(sys.argv[1]) if len(sys.argv) > 1 else 10
-max_depth = int(sys.argv[2]) if len(sys.argv) > 2 else 10
+n_estimators = int(sys.argv[1])
+max_depth = int(sys.argv[2])
 
 # Train model
 params = {
