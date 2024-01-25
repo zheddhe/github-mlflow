@@ -1,7 +1,10 @@
-name: Apple_Model
+name: apple_project
 
 python_env: python_env.yaml
 
 entry_points:
   main:
-    command: "python3 experiment.py"
+    parameters:
+      n_estimators: {type: float, default: 10}
+      max_depth: {type: int, default: 10}
+    command: "python3 train.py {n_estimators} {max_depth}"
