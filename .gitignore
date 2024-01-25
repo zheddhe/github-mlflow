@@ -164,3 +164,7 @@ mlruns/
 
 # virtualenv
 env_mlflow/
+
+# MLflow Project
+Apple_Project/
+apple_project/
