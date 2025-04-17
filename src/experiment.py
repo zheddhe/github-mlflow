@@ -10,6 +10,8 @@ import numpy as np
 # Define tracking_uri
 client = MlflowClient(tracking_uri="http://127.0.0.1:8080")
 
+mlflow.set_tracking_uri("http://127.0.0.1:8080")
+
 # Define experiment name, run name and artifact_path name
 apple_experiment = mlflow.set_experiment("Apple_Models")
 run_name = "first_run"
