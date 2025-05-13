@@ -1,14 +1,11 @@
 # Imports librairies
-from mlflow import MlflowClient
+#from mlflow import MlflowClient
 import mlflow
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import pandas as pd
 import numpy as np
-
-# Define tracking_uri
-client = MlflowClient(tracking_uri="http://127.0.0.1:8080")
 
 # Set tracking experiment
 mlflow.set_tracking_uri("http://127.0.0.1:8080")
