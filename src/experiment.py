@@ -10,6 +10,7 @@ import numpy as np
 # Define tracking_uri
 client = MlflowClient(tracking_uri="http://127.0.0.1:8080")
 
+# Set tracking experiment
 mlflow.set_tracking_uri("http://127.0.0.1:8080")
 
 # Define experiment name, run name and artifact_path name
@@ -18,7 +19,7 @@ run_name = "first_run"
 artifact_path = "rf_apples"
 
 # Import Database
-data = pd.read_csv("fake_data.csv")
+data = pd.read_csv("data/fake_data.csv")
 X = data.drop(columns=["date", "demand"])
 X = X.astype('float')
 y = data["demand"]
