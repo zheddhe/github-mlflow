@@ -30,7 +30,7 @@ params = {
     "max_depth": 10,
     "random_state": 42,
 }
-rf = RandomForestRegressor(**params)
+rf = RandomForestRegressor(**params)  # type: ignore
 rf.fit(X_train, y_train)
 
 # Evaluate model
